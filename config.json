@@ -1,8 +1,10 @@
 {
-	"TYPE": "table",
-	"XPATH": "//*[@id='content']/",
-	"FILE": "data.json",
-	"XLS_FILE": "data.xlsx",
-	"REQUIRE_SCROLL": true,
-	"URL": "https://www.example.com"
+	"config": [
+		{	
+			"URL": "https://www.example.com",
+			"ACTIONS": [
+				
+			]
+		}	
+	]
 }
