@@ -1,0 +1,33 @@
+{
+	"CONFIG": [
+		{	
+			"URL": "https://coinmarketcap.com/",
+			"ACTIONS": [
+				{
+					"ACTION": "scroll",
+					"VALUE": 25,
+					"PAUSE": 2
+				},
+				{
+					"ACTION": "findTable",
+					"TYPE": "table",
+					"XPATH": "//table[contains(@class, 'cmc-table')]"				
+				},
+				{
+					"ACTION": "export",
+					"TYPE": "json",
+					"FILENAME": "currencies.json"
+				},
+				{
+					"ACTION": "export",
+					"TYPE": "excel",
+					"FILENAME": "currencies.xlsx"
+				},
+				{
+					"ACTION": "wait",
+					"VALUE": 10
+				}
+			]
+		}	
+	]
+}

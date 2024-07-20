@@ -20,7 +20,7 @@
 				},
 				{
 					"ACTION": "scroll",
-					"VALUE%": "100"
+					"VALUE": "100"
 				},
 				{
 					"ACTION": "select",
@@ -39,7 +39,7 @@
 				},
 				{
 					"ACTION": "export",
-					"TYPE": "xls",
+					"TYPE": "xlsx",
 					"FILENAME": "output.xls"
 				},
 				{

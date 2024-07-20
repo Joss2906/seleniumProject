@@ -1,0 +1,39 @@
+{
+	"CONFIG": [
+		{	
+			"URL": "https://www.accuweather.com/",
+			"ACTIONS": [
+				{
+					"XPATH": "//form[contains(@class, 'search-form')]/input",
+					"ACTION": "input",
+					"VALUE": "Torreón, COA MX"
+				},
+				{
+					"ACTION": "wait",
+					"VALUE": 2
+				},
+				{
+					"ACTION": "findTable",
+					"TYPE": "div",
+					"ROW_TYPE": "a",
+					"XPATH": "//div[@class='daily-list-body']"	
+								
+				},
+				{
+					"ACTION": "export",
+					"TYPE": "json",
+					"FILENAME": "weather.json"
+				},
+				{
+					"ACTION": "export",
+					"TYPE": "excel",
+					"FILENAME": "weather.xlsx"
+				},
+				{
+					"ACTION": "wait",
+					"VALUE": 10
+				}
+			]
+		}	
+	]
+}

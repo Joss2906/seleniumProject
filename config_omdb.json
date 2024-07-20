@@ -1,0 +1,33 @@
+{
+	"CONFIG": [
+		{	
+			"URL": "https://www.omdbapi.com/",
+			"ACTIONS": [
+				{
+					"ACTION": "click",
+					"TYPE": "button",
+					"XPATH": "//a[@href='#parameters']"
+				},
+				{
+					"ACTION": "findTable",
+					"TYPE": "table",
+					"XPATH": "//div[@id='parameters']/div[2]/div/div/table"				
+				},
+				{
+					"ACTION": "export",
+					"TYPE": "json",
+					"FILENAME": "omdb.json"
+				},
+				{
+					"ACTION": "export",
+					"TYPE": "excel",
+					"FILENAME": "omdb.xlsx"
+				},
+				{
+					"ACTION": "wait",
+					"VALUE": 10
+				}
+			]
+		}	
+	]
+}
